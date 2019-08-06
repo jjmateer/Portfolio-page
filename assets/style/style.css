@@ -1,141 +1,158 @@
+#nameTag{
+    opacity: 0;
+    text-align: center;
+}
+
+
+
     body{
         margin:0px;
+        background-color: black;
+        color:white;
+    }
+    .marginContent{
+        margin-left:5%;
     }
     #menu{
         position:fixed;
         height:100%;
         width:4.5%;
-        border:solid black;
-
+        background-color: white;
+    }
+    #topButtonsDiv{
+        width:100%;
+        height:auto;
+    }
+    .navBtns{
+        height:5%;
+        width:100%;
+        background-color:black;
+        opacity: 50%;
     }
     #banner{
-        margin-left:5%;
+        text-align: center;
         position:sticky;
     }
-    contentContainer{
-        margin-left:5%;
+    contentContainer{    
         position:relative;
         display: block;
     }
     #aboutme{
-        margin-left:5%;
+    
         display:block;
     }
     #portfolio{
-        margin-left:5%;
+    
         display:block;
     }
     #contact{
-        margin-left:5%;
+    
         display:block;
     }
     @media (min-width: 1281px) {
-    #menu{
-        
+        #menu{
+            width:5%;
         }
         #banner{
         padding-top:5%;
-        border:solid black;
+        border:solid white;
         height:300px;
-        font-size:150px;
+        font-size:225px;
         color:blue
         }
-        #aboutme{
-            min-height:800px;
-            border:solid black;
+        #aboutme{        
+            min-height:2000px;
+            border:solid white;
         }
-        #portfolio{
-            min-height:800px;
-            border:solid black;
+        #portfolio{        
+            min-height:2000px;
+            border:solid white;
         }
-        #contact{
-            min-height:800px;
-            border:solid black;
+        #contact{        
+            min-height:2000px;
+            border:solid white;
         }
-
+        .marginContent{
+            margin-left:5.5%;
+        }
     }
     @media (min-width: 1025px) and (max-width: 1280px) {
-    #menu{
-        
+        #menu{
+            width:10%;
         }
         #banner{
         padding-top:7.5%;
-        border:solid black;
+        border:solid white;
         height:300px;
         font-size:125px;
         color:purple;
         }
         #aboutme{
             min-height:600px;
-
-            border:solid black;
+            border:solid white;
         }
         #portfolio{
             min-height:600px;
-
-            border:solid black;
+            border:solid white;
         }
         #contact{
             min-height:600px;
-
-            border:solid black;
+            border:solid white;
+        }
+        .marginContent{
+            margin-left:10.5%;
         }
     }
     @media (min-width: 481px) and (max-width: 1024px) {
-    #menu{
-        width:9.5%;
+        #menu{
+            width:15%;
         }
         #banner{
-            margin-left:10%;
         width:auto;
-        border:solid black;
+        border:solid white;
         max-height:500px;
         font-size:75px;
         color:green;
         }
         #aboutme{
-            margin-left:10%;
             min-height:500px;
-            border:solid black;
+            border:solid white;
         }
         #portfolio{
-            margin-left:10%;
             min-height:500px;
-            border:solid black;
+            border:solid white;
         }
         #contact{
-            margin-left:10%;
             min-height:500px;
-            border:solid black;
+            border:solid white;
+        }
+        .marginContent{
+            margin-left:15.5%;
         }
     }
     @media (min-width: 220px) and (max-width: 480px) {
-    #menu{
-        width:9.5%
+        #menu{
+            width:15%;
         }
         #banner{
-            margin-left:10%;
-        border:solid black;
+        border:solid white;
         color:red;
         max-height:400px;
         font-size:50px;
         } 
         #aboutme{
-            margin-left:10%;
             min-height:300px;
-
-            border:solid black;
+            border:solid white;
         }
         #portfolio{
-            margin-left:10%;
             min-height:300px;
-
-            border:solid black;
+            border:solid white;
         }
         #contact{
-            margin-left:10%;
             min-height:300px;
-
-            border:solid black;
+            border:solid white;
+        }
+        .marginContent{
+            margin-left:15.5%;
         }
     }

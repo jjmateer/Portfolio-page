@@ -3,39 +3,58 @@
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="assets/style/mobile.css">
             <link rel="stylesheet" type="text/css" href="assets/style/tablet.css">
             <link rel="stylesheet" type="text/css" href="assets/style/extra-wide.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>John Mateer</title>
 </head>
 
 <body>
     <div class="container" id="menu">
+        <div id="topButtonsdiv">
+            <button class="navBtns" id="homeBtn"></button>
+            <button class="navBtns" id="aboutmeBtn"></button>
+            <button class="navBtns" id="portfolioBtn"></button>
+            <button class="navBtns" id="contactBtn"></button>
+        </div>
 
     </div>
     <div class="container" id="contentContainer">
-        <div  id="banner">
-            John Mateer
+        <div class="sections" id="banner">
+            <div id="nameTag" class="marginContent">John Mateer</div>
         </div>
-        <div  id="aboutme">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quae pariatur! Deserunt numquam, magni quo sed
-            soluta enim quaerat, consequuntur quibusdam excepturi iure aperiam facere labore impedit dolorem sequi
-            consequatur.
+        <div class="sections" id="aboutme">
+            <div class="marginContent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, quae pariatur! Deserunt numquam, magni quo
+                sed
+                soluta enim quaerat, consequuntur quibusdam excepturi iure aperiam facere labore impedit dolorem sequi
+                consequatur.
+            </div>
+            <div id="animation"></div>
         </div>
-        <div  id="portfolio">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, assumenda, repudiandae ratione fugit
-            dignissimos
-            deserunt nostrum veniam nobis blanditiis vero aut, illum corrupti magnam eveniet. Maxime distinctio pariatur
-            voluptate mollitia!
+
+        <div class="sections" id="portfolio">
+            <div class="marginContent">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, assumenda, repudiandae ratione fugit
+                dignissimos
+                deserunt nostrum veniam nobis blanditiis vero aut, illum corrupti magnam eveniet. Maxime distinctio
+                pariatur
+                voluptate mollitia!
+            </div>
         </div>
-        <div  id="contact">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis quasi esse possimus, deserunt ex. Sit
-            suscipit nisi adipisci corrupti harum, corporis blanditiis minus sed ducimus rem doloremque. Blanditiis,
-            rerum!
+
+        <div class="sections" id="contact">
+            <div class="marginContent">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore omnis quasi esse possimus, deserunt ex.
+                Sit
+                suscipit nisi adipisci corrupti harum, corporis blanditiis minus sed ducimus rem doloremque. Blanditiis,
+                rerum!
+            </div>
         </div>
     </div>
+    <script src="assets/javascript/code.js"></script>
 </body>
 
 </html>
