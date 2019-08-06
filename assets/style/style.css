@@ -1,0 +1,141 @@
+    body{
+        margin:0px;
+    }
+    #menu{
+        position:fixed;
+        height:100%;
+        width:4.5%;
+        border:solid black;
+
+    }
+    #banner{
+        margin-left:5%;
+        position:sticky;
+    }
+    contentContainer{
+        margin-left:5%;
+        position:relative;
+        display: block;
+    }
+    #aboutme{
+        margin-left:5%;
+        display:block;
+    }
+    #portfolio{
+        margin-left:5%;
+        display:block;
+    }
+    #contact{
+        margin-left:5%;
+        display:block;
+    }
+    @media (min-width: 1281px) {
+    #menu{
+        
+        }
+        #banner{
+        padding-top:5%;
+        border:solid black;
+        height:300px;
+        font-size:150px;
+        color:blue
+        }
+        #aboutme{
+            min-height:800px;
+            border:solid black;
+        }
+        #portfolio{
+            min-height:800px;
+            border:solid black;
+        }
+        #contact{
+            min-height:800px;
+            border:solid black;
+        }
+
+    }
+    @media (min-width: 1025px) and (max-width: 1280px) {
+    #menu{
+        
+        }
+        #banner{
+        padding-top:7.5%;
+        border:solid black;
+        height:300px;
+        font-size:125px;
+        color:purple;
+        }
+        #aboutme{
+            min-height:600px;
+
+            border:solid black;
+        }
+        #portfolio{
+            min-height:600px;
+
+            border:solid black;
+        }
+        #contact{
+            min-height:600px;
+
+            border:solid black;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 1024px) {
+    #menu{
+        width:9.5%;
+        }
+        #banner{
+            margin-left:10%;
+        width:auto;
+        border:solid black;
+        max-height:500px;
+        font-size:75px;
+        color:green;
+        }
+        #aboutme{
+            margin-left:10%;
+            min-height:500px;
+            border:solid black;
+        }
+        #portfolio{
+            margin-left:10%;
+            min-height:500px;
+            border:solid black;
+        }
+        #contact{
+            margin-left:10%;
+            min-height:500px;
+            border:solid black;
+        }
+    }
+    @media (min-width: 220px) and (max-width: 480px) {
+    #menu{
+        width:9.5%
+        }
+        #banner{
+            margin-left:10%;
+        border:solid black;
+        color:red;
+        max-height:400px;
+        font-size:50px;
+        } 
+        #aboutme{
+            margin-left:10%;
+            min-height:300px;
+
+            border:solid black;
+        }
+        #portfolio{
+            margin-left:10%;
+            min-height:300px;
+
+            border:solid black;
+        }
+        #contact{
+            margin-left:10%;
+            min-height:300px;
+
+            border:solid black;
+        }
+    }

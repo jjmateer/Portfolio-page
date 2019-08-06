@@ -1,0 +1,8 @@
+@media all and (max-width: 450px) and (min-width: 300px) {
+    #banner{
+        width:120%;
+        border:solid black;
+        height:80%;
+    }
+ 
+    }
