@@ -10,15 +10,18 @@ function showContent() {
     
 }
 $(document).ready(function () {
-    $("#banner").prepend("<btn id='welcomeBtn'>Welcome</btn>")
-    $("#welcomeBtn").delay(500).animate({ "opacity": "1" }, 700);
+    $("#banner").prepend("<div id='welcomeDisplay'>Welcome</div>")
+    $("#banner").append("<btn id='welcomeBtn'>Enter site</btn>")
+    $("#welcomeDisplay").delay(500).animate({ "opacity": "1" }, 700);
+    $("#welcomeBtn").delay(1000).animate({ "opacity": "1" }, 1000);
     hideContent();
     $("#banner").css("width", "100%");
     $('#welcomeBtn').on('click', function () {
-        $("#welcomeBtn").hide();
-        $("#nameTag").delay(500).animate({ "opacity": "1" }, 700);
-        $(".menu").delay(500).animate({ "opacity": "0.75" }, 700);
-        $("#mobileMenu").delay(500).animate({ "opacity": "1" }, 700);
+        $("#welcomeDisplay").animate({ "opacity": "0" }, 1000);
+        $("#welcomeBtn").animate({ "opacity": "0" }, 1000);
+        $("#nameTag").delay(500).animate({ "opacity": "1" }, 1000);
+        $(".menu").delay(500).animate({ "opacity": "0.75" }, 1000);
+        $("#mobileMenu").delay(500).animate({ "opacity": "1" }, 1000);
         showContent();
         $('#banner').css({
             'background-color': 'lightgrey',
