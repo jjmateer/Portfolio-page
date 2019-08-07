@@ -7,6 +7,7 @@ function showContent() {
     $("#aboutme").show();
     $("#portfolio").show();
     $("#contact").show();
+    
 }
 $(document).ready(function () {
     $("#banner").prepend("<btn id='welcomeBtn'>Welcome</btn>")
@@ -20,7 +21,7 @@ $(document).ready(function () {
         $("#mobileMenu").delay(500).animate({ "opacity": "1" }, 700);
         showContent();
         $('#banner').css({
-            'background-color': 'teal',
+            'background-color': 'lightgrey',
         });
     
     });
@@ -50,6 +51,16 @@ $("#scroll4").on('click',function() {
         scrollTop: $("#contact").offset().top
     },
         'slow');
+});
+$("#mobile1").on('click', function() {
+    $("#mobileMenu").animate({ "opacity": "0" }, 400);
+    
+});
+$("#mobile2").on('click', function() {
+    $("#mobileMenu").animate({ "opacity": "0" }, 400);
+});
+$("#mobile3").on('click', function() {
+    $("#mobileMenu").animate({ "opacity": "0" }, 400);
 });
 
 

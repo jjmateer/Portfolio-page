@@ -3,13 +3,18 @@
 }
 #nameTag{
     opacity: 0;
-    color:white;
-    position:absolute;
+    color:black;
+    margin-top:5%;
 }
+#banner {
+    background-img: url('assets/style/images/background.jpg');
+    transition: background-color 2s;
+    }
     body{
         margin:0px;
         background-color: black;
         color:white;
+        overflow:hidden;
     }
     .menu{
         transform:translateY(50%);
@@ -49,6 +54,8 @@
         font-family: 'Frank Ruhl Libre', serif;
     }
 
+    
+
     @media (min-width: 1281px) {
         #welcomeBtn{
             color:white;
@@ -77,25 +84,29 @@
         #aboutText{
             font-size:50px;
         }
+        #portfolioHeader{
+            font-size:150px
+        }
         #portfolio{        
             min-height:2000px;
             border:solid white;
             margin-top:5%;
+            font-size:50px;
         }
         #contact{        
             min-height:2000px;
             border:solid white;
             margin-top:5%;
         }
+        #contactHeader{
+            font-size: 150px
+        }
         .marginContent{
             margin:5.5%
             
         }
     }
-    @media (min-width: 1025px) and (max-width: 1280px) {
-        /* .menu{
-            width:10%;
-        } */
+    @media (min-width: 769px) and (max-width: 1280px) {
         #mobileMenu{
             display:none;
         }
@@ -107,7 +118,7 @@
 
         }
         #aboutme{
-            min-height:600px;
+            height:100%;
             border:solid white;
             font-size:30px;
         }
@@ -115,27 +126,59 @@
             font-size:60px;
         }
         #portfolio{
-            min-height:600px;
+            height:100%;
             border:solid white;
         }
+        #portfolioHeader{
+            font-size:60px
+        }
         #contact{
-            min-height:600px;
+            height:100%;
             border:solid white;
+        }
+        #contactHeader{
+            font-size: 60px
         }
         .marginContent{
             margin:5.5%
             ;
         }
     }
-    @media (min-width: 481px) and (max-width: 1024px) {
-        /* .menu{
-            width:15%;
-        } */
+    @media (min-width: 481px) and (max-width: 768px) {
+        body{
+            overflow:none;
+        }
+        .menu{
+            display:inline-block;
+            transform:translateY(50%);
+            position:fixed;
+            width:150px;
+            height:1000px;
+            z-index:5;
+            opacity: 0;
+            top:30%;
+            
+            
+        }
+        .menu a{
+            color:white;
+            display:inline-block;
+            height:auto;
+            width:250px;
+            font-family: 'Frank Ruhl Libre', serif;
+            font-size:40px;
+            transition:0.6s all;
+            text-decoration: none;
+            margin-left:0px;
+        }
+        .menu a:click{
+            margin-left:0;
+        }
         #mobileMenu{
             display:none;
         }
         #banner{
-        height:30%;
+        height:100%;
         width:auto;
         border:solid white;
         font-size:75px;
@@ -143,7 +186,7 @@
         
         }
         #aboutme{
-            min-height:500px;
+            height:100%;
             border:solid white;
         }
         #aboutHeader{
@@ -153,12 +196,18 @@
             font-size:30px;
         }
         #portfolio{
-            min-height:500px;
+            height:100%;
             border:solid white;
         }
+        #portfolioHeader{
+            font-size:50px;
+        }
         #contact{
-            min-height:500px;
+            height:100%;
             border:solid white;
+        }
+        #contactHeader{
+            font-size: 50px
         }
         .marginContent{
             margin:5.5%
@@ -178,20 +227,21 @@
             height:75%;
             border:solid white;
             font-size:40px;
+
         }
-        #aboutMobile{
+        #mobile1{
             display:block;
             width:100%;
             height:25%;
             background-color:orange;
         }
-        #portfolioMobile{
+        #mobile2{
             display:block;
             width:100%;
             height:25%;
             background-color:red;
         }
-        #contactMobile{
+        #mobile3{
             display:block;
             width:100%;
             height:25%;
