@@ -1,23 +1,23 @@
 #nameTag{
     opacity: 0;
-    text-align: center;
+    color:white;
 }
-
-
-
+    #background{
+        display:block;
+        background-color:white;
+        z-index:-1;
+    }
     body{
         margin:0px;
         background-color: black;
         color:white;
     }
-    .marginContent{
-        margin-left:5%;
-    }
     #menu{
         position:fixed;
         height:100%;
-        width:4.5%;
         background-color: white;
+        opacity: 0;
+        
     }
     #topButtonsDiv{
         width:100%;
@@ -30,47 +30,55 @@
         opacity: 50%;
     }
     #banner{
-        text-align: center;
+        text-align:center;
         position:sticky;
+        width:auto;
+        display:block;
+        color:white;
     }
     contentContainer{    
-        position:relative;
         display: block;
+        opacity:0;
+        
     }
     #aboutme{
-    
-        display:block;
+        text-align:justify;
     }
-    #portfolio{
-    
-        display:block;
-    }
-    #contact{
-    
-        display:block;
-    }
+
     @media (min-width: 1281px) {
+        #welcomeBtn{
+            color:white;
+        }
         #menu{
             width:5%;
         }
         #banner{
-        padding-top:5%;
+        height:100%;
+        padding-top:1%;
         border:solid white;
-        height:300px;
-        font-size:225px;
-        color:blue
+        font-size:150px;
+        color:black
         }
         #aboutme{        
             min-height:2000px;
             border:solid white;
+            margin-top:5%;
+        }
+        #aboutHeader{
+            font-size:60px;
+        }
+        #aboutText{
+            font-size:50px;
         }
         #portfolio{        
             min-height:2000px;
             border:solid white;
+            margin-top:5%;
         }
         #contact{        
             min-height:2000px;
             border:solid white;
+            margin-top:5%;
         }
         .marginContent{
             margin-left:5.5%;
@@ -81,15 +89,19 @@
             width:10%;
         }
         #banner{
-        padding-top:7.5%;
+        height:100%;
+        padding-top:3%;
         border:solid white;
-        height:300px;
         font-size:125px;
-        color:purple;
+        color:black;
         }
         #aboutme{
             min-height:600px;
             border:solid white;
+            font-size:50px;
+        }
+        #aboutHeader{
+            font-size:60px;
         }
         #portfolio{
             min-height:600px;
@@ -108,15 +120,21 @@
             width:15%;
         }
         #banner{
+        height:30%;
         width:auto;
         border:solid white;
-        max-height:500px;
         font-size:75px;
         color:green;
         }
         #aboutme{
             min-height:500px;
             border:solid white;
+        }
+        #aboutHeader{
+            font-size:50px;
+        }
+        #aboutText{
+            font-size:30px;
         }
         #portfolio{
             min-height:500px;
@@ -132,17 +150,59 @@
     }
     @media (min-width: 220px) and (max-width: 480px) {
         #menu{
-            width:15%;
+            display:none;
+        }
+        #mobileMenu{
+            display: block;
+            width:100%;
+            height:75%;
+            border:solid white;
+        }
+        #aboutMobile{
+            display:block;
+            width:100%;
+            height:25%;
+            background-color:orange;
+        }
+        #portfolioMobile{
+            display:block;
+            width:100%;
+            height:25%;
+            background-color:red;
+        }
+        #contactMobile{
+            display:block;
+            width:100%;
+            height:25%;
+            background-color:blue;
         }
         #banner{
+        height:25%;
         border:solid white;
         color:red;
-        max-height:400px;
         font-size:50px;
         } 
+        #nameTag{
+            font-size:60px;
+        }
+
         #aboutme{
+            display:none;
+        }
+        #portfolio{
+            display:none;
+        }
+        #contact{display:none;}
+        /* #aboutme{
             min-height:300px;
             border:solid white;
+            font-size:15px;
+        }
+        #aboutHeader{
+            font-size:50px;
+        }
+        #aboutText{
+            font-size:20px;
         }
         #portfolio{
             min-height:300px;
@@ -154,5 +214,5 @@
         }
         .marginContent{
             margin-left:15.5%;
-        }
+        } */
     }
