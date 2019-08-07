@@ -60,7 +60,7 @@ $("#mobile1").on('click', function () {
         scrollTop: $("#aboutme").offset().top
     },
         'slow');
-    $("#aboutme").append("<btn id='homeBtnMobile'>Home</btn>")
+    $("#aboutme").append("<div id='homeBtnMobile'></div>")
     $("#homeBtnMobile").on('click', function () {
         $("#homeBtnMobile").remove();
         $('body').animate({
@@ -76,7 +76,7 @@ $("#mobile2").on('click', function () {
         scrollTop: $("#portfolio").offset().top
     },
         'slow');
-    $("#portfolio").append("<btn id='homeBtnMobile'>Home</btn>")
+    $("#portfolio").append("<div id='homeBtnMobile'></div>")
     $("#homeBtnMobile").on('click', function () {
         $("#homeBtnMobile").remove();
         $('body').animate({
@@ -92,7 +92,7 @@ $("#mobile3").on('click', function () {
         scrollTop: $("#contact").offset().top
     },
         'slow');
-    $("#contact").append("<btn id='homeBtnMobile'>Home</btn>")
+    $("#contact").append("<div id='homeBtnMobile'></div>")
     $("#homeBtnMobile").on('click', function () {
         $("#homeBtnMobile").remove();
         $('body').animate({
@@ -102,8 +102,6 @@ $("#mobile3").on('click', function () {
 
     });
 });
-
-
 
 
 

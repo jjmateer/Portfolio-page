@@ -7,14 +7,12 @@
     opacity: 0;
     color:white;
 }
-
 #nameTag{
     opacity: 0;
     color:black;
     margin-top:5%;
 }
 #portfolioGrid{
-    border:solid white;
     height:60%;
     width:100%;
     display: grid;
@@ -25,9 +23,9 @@
     background-color:black;
     transition: background-color 2s;
     height:100%;
+    width:100%;
     }
-    body{
-        margin:0px;
+    html{
         background-color: black;
         color:white;
         overflow:hidden;
@@ -55,7 +53,11 @@
         margin-left:-380px;
     }
     .menu a:hover{
-        margin-left:0;
+        margin-left:-10px;
+    }
+    .pictures{
+        height:200px;
+        width:400px;
     }
     #banner{
         text-align:center;
@@ -70,6 +72,15 @@
         font-family: 'Frank Ruhl Libre', serif;
     }
     #aboutHeader{
+        color:orange;
+        text-align:center;
+    }
+    #portfolioHeader{
+        color:lightblue;
+        text-align:center;
+    }
+    #contactHeader{
+        color:orangered;
         text-align:center;
     }
     #portfolio{
@@ -80,19 +91,41 @@
     }
     #contactForm{
         width:40%;
-        height:60%;
+        height:40%;
         margin-left:30%;
         margin-right:30%;
     }
     .formInputs{
         width:100%;
-        height:10%;
+        height:7.5%;
         margin:5px;
     }
     .formMessage{
         width:100%;
         height:20%;
         margin:5px;
+    }
+    #contactLinks{
+        width:40%;
+        height:20%;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        display:flex;
+    }
+    #github{
+        width:20%;
+        height:20%;
+        margin:0px;
+        position:absolute;
+        margin-left:0px;
+    }
+    #linkedin{
+        width:20%;
+        height:20%;
+        margin-left:25%;
+        position:absolute;
+        margin-right:0px;
     }
 
     @media (min-width: 1281px) {
@@ -101,7 +134,7 @@
         }
         #banner{
         height:100%;
-        width:94%;
+        width:100%;
         font-size:150px;
         color:black
         }
@@ -163,31 +196,32 @@
         }
     @media (min-width: 481px) and (max-width: 1024px) {
         .menu{
-            display:inline-block;
             transform:translateY(50%);
             position:fixed;
-            width:150px;
-            height:1000px;
+            width:600px;
+            height:200px;
             z-index:5;
             opacity: 0;
-            top:10%;
-            
-            
+            top:50%;
+    
         }
         .menu a{
             color:white;
-            display:inline-block;
-            height:auto;
-            width:250px;
+            display:block;
+            height:25%;
+            width:400px;
+            text-align:right;
             font-family: 'Frank Ruhl Libre', serif;
-            font-size:40px;
+            font-size:25px;
             transition:0.6s all;
             text-decoration: none;
-            margin-left:0px;
-            opacity:0.5;
+            margin-left:-300px;
         }
-        .menu a:click{
-            margin-left:0;
+        .menu a:hover{
+            margin-left:-290px;
+        }
+        #portfolioGrid{
+            display:none;
         }
         #mobileMenu{
             display:none;
@@ -197,6 +231,9 @@
         width:auto;
         font-size:75px;
         
+        }
+        #nameTag{
+            color:purple;
         }
         #aboutme{
             height:100%;
@@ -222,12 +259,20 @@
         #contactHeader{
             font-size: 50px
         }
-        
+        #contactLinks{
+            width:80%;
+            height:20%;
+            margin-left:auto;
+            margin-right:auto;
+        }
 
 
     
     }
     @media (min-width: 220px) and (max-width: 480px) {
+        #portfolioGrid{
+            display:none;
+        }
         .menu{
             display:none;
         }
@@ -261,6 +306,8 @@
         #homeBtnMobile{
             background-color:purple;
             color:white;
+            height:50px;
+            width:100px;
         }
         #banner{
             height:25%;
@@ -303,6 +350,26 @@
             width:90%;
             height:20%;
             margin:5px;
+        }
+        #contactLinks{
+            width:100%;
+            height:20%;
+            display:flex;
+        }
+        #github{
+            width:40%;
+            height:100%;
+            margin:0px;
+        }
+        #linkedin{
+            width:40%;
+            height:100%;
+            margin-left:60%;
+        }
+        html{
+            background-color: black;
+            color:white;
+            overflow:hidden;
         }
 
     }
