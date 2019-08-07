@@ -79,7 +79,6 @@
         }
         #aboutme{        
             height:100%;
-
             margin-top:5%;
         }
         #aboutHeader{
@@ -93,23 +92,17 @@
         }
         #portfolio{        
             height:100%;
-
             margin-top:5%;
             font-size:50px;
         }
         #contact{        
             height:100%;
-
             margin-top:5%;
         }
         #contactHeader{
             font-size: 150px
         }
-        .marginContent{
-            margin:5.5%
-            
         }
-    }
     @media (min-width: 1025px) and (max-width: 1280px) {
         #mobileMenu{
             display:none;
@@ -122,7 +115,6 @@
         }
         #aboutme{
             height:100%;
-
             font-size:30px;
         }
         #aboutHeader{
@@ -130,7 +122,6 @@
         }
         #portfolio{
             height:100%;
-
         }
         #portfolioHeader{
             font-size:60px
@@ -142,11 +133,7 @@
         #contactHeader{
             font-size: 60px
         }
-        .marginContent{
-            margin:5.5%
-            ;
         }
-    }
     @media (min-width: 481px) and (max-width: 1024px) {
         body{
             overflow:none;
@@ -211,10 +198,8 @@
         #contactHeader{
             font-size: 50px
         }
-        .marginContent{
-            margin:5.5%
-            ;
-        }
+        
+
 
     
     }
@@ -249,6 +234,10 @@
             height:25%;
             background-color:orangered;
         }
+        #homeBtnMobile{
+            background-color:purple;
+            color:white;
+        }
         #banner{
             height:25%;
 
@@ -259,13 +248,16 @@
         }
 
         #aboutme{
-            display:none;
+            height:100%;
+            width:100%;
         }
         #portfolio{
-            display:none;
+            height:100%;
+            width:100%;
         }
         #contact{
-            display:none;
+            height:100%;
+            width:100%;
         }
 
     }

@@ -7,7 +7,7 @@ function showContent() {
     $("#aboutme").show();
     $("#portfolio").show();
     $("#contact").show();
-    
+
 }
 $(document).ready(function () {
     $("#banner").prepend("<div id='welcomeDisplay'>Welcome</div>")
@@ -26,44 +26,84 @@ $(document).ready(function () {
         $('#banner').css({
             'background-color': 'lightgrey',
         });
-    
+
     });
 });
-$("#scroll1").on('click',function() {
+$("#scroll1").on('click', function () {
     $('body').animate({
         scrollTop: $("#banner").offset().top
     },
         'slow');
 });
-$("#scroll2").on('click',function() {
+$("#scroll2").on('click', function () {
     $('body').animate({
         scrollTop: $("#aboutme").offset().top
     },
         'slow');
 });
 
-$("#scroll3").on('click',function() {
+$("#scroll3").on('click', function () {
     $('body').animate({
         scrollTop: $("#portfolio").offset().top
     },
         'slow');
 });
 
-$("#scroll4").on('click',function() {
+$("#scroll4").on('click', function () {
     $('body').animate({
         scrollTop: $("#contact").offset().top
     },
         'slow');
 });
-$("#mobile1").on('click', function() {
-    $("#mobileMenu").animate({ "opacity": "0" }, 400);
-    
+$("#mobile1").on('click', function () {
+    $('body').animate({
+        scrollTop: $("#aboutme").offset().top
+    },
+        'slow');
+    $("#aboutme").append("<btn id='homeBtnMobile'>Home</btn>")
+    $("#homeBtnMobile").on('click', function () {
+        $("#homeBtnMobile").remove();
+        $('body').animate({
+            scrollTop: $("#banner").offset().top
+        },
+            'slow');
+
+    });
+
 });
-$("#mobile2").on('click', function() {
-    $("#mobileMenu").animate({ "opacity": "0" }, 400);
+$("#mobile2").on('click', function () {
+    $('body').animate({
+        scrollTop: $("#portfolio").offset().top
+    },
+        'slow');
+    $("#portfolio").append("<btn id='homeBtnMobile'>Home</btn>")
+    $("#homeBtnMobile").on('click', function () {
+        $("#homeBtnMobile").remove();
+        $('body').animate({
+            scrollTop: $("#banner").offset().top
+        },
+            'slow');
+
+    });
+
 });
-$("#mobile3").on('click', function() {
-    $("#mobileMenu").animate({ "opacity": "0" }, 400);
+$("#mobile3").on('click', function () {
+    $('body').animate({
+        scrollTop: $("#contact").offset().top
+    },
+        'slow');
+    $("#contact").append("<btn id='homeBtnMobile'>Home</btn>")
+    $("#homeBtnMobile").on('click', function () {
+        $("#homeBtnMobile").remove();
+        $('body').animate({
+            scrollTop: $("#banner").offset().top
+        },
+            'slow');
+
+    });
 });
+         
+
+
 
 
