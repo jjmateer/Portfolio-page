@@ -1,7 +1,91 @@
-@media all and (max-width: 1023px) and (min-width:768px ) {
+@media (min-width: 481px) and (max-width: 1024px) {
+    .menu{
+        transform:translateY(50%);
+        position:fixed;
+        width:600px;
+        height:200px;
+        z-index:5;
+        opacity: 0;
+        top:50%;
+
+    }
+    .menu a{
+        color:white;
+        display:block;
+        height:25%;
+        width:400px;
+        text-align:right;
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size:25px;
+        transition:0.6s all;
+        text-decoration: none;
+        margin-left:-300px;
+    }
+    .menu a:hover{
+        margin-left:-290px;
+    }
+    #portfolioGrid{
+        display:none;
+    }
+    #mobileMenu{
+        display:none;
+    }
     #banner{
-        width:120%;
-        border:solid black;
-        height:10%;
+    height:100%;
+    width:auto;
+    font-size:75px;
+    
     }
+    #nameTag{
+        color:purple;
     }
+    #aboutme{
+        height:100%;
+
+    }
+    #aboutHeader{
+        font-size:50px;
+    }
+    #aboutText{
+        font-size:30px;
+    }
+    #portfolio{
+        height:100%;
+
+    }
+    #portfolioHeader{
+        font-size:50px;
+    }
+    #contact{
+        height:100%;
+
+    }
+    #contactHeader{
+        font-size: 50px
+    }
+    #contactLinks{
+        width:80%;
+        height:20%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+    #portfolioGrid{
+        display:none;
+    }
+    #stackItem{
+        width:100%;;
+        height:200px;
+    }
+    #portfolioStack{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+    .pictures{
+        width:200px;
+        height:200px;
+        margin:0px;
+    }
+}

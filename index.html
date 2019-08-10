@@ -6,9 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Patua+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="assets/style/mobile.css">
-            <link rel="stylesheet" type="text/css" href="assets/style/tablet.css">
-            <link rel="stylesheet" type="text/css" href="assets/style/extra-wide.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/style/mobile.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/tablet.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/extra-wide.css">
     <title>John Mateer</title>
 </head>
 
@@ -82,41 +82,59 @@
                 <div class="grid-item"></div>
                 <div class="grid-item"></div>
             </div>
-            <div class="grid-container"></div>
+            <div id="portfolioStack">
+                <div id="stackItem"> <button onclick="location.href='https://jjmateer.github.io/Giftastic/'"
+                        type="button" class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/giftasticImage.png"></button>
+                    <button onclick="location.href='https://jjmateer.github.io/Phsychic-game/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/PhsychicImage.png"></button>
+                </div>
+                <div id="stackItem"> <button onclick="location.href='https://jjmateer.github.io/Trivia-game/'"
+                        type="button" class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/fastfoodImage.png"></button>
+                    <button onclick="location.href='https://jjmateer.github.io/TriviaGameAdvanced/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/triviaImage.png"></button>
+                </div>
+                <div id="stackItem"> <button
+                        onclick="location.href='https://jjmateer.github.io/Crystal-Collector-Game/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/crystalImage.png"></button>
+                    <button onclick="location.href='https://jjmateer.github.io/Train-Scheduler/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/trainImage.png"></button>
+                </div>
 
-        </div>
-    </div>
+            </div>
 
-    <div id="contact">
+            <div id="contact">
 
-        <div id="contactHeader">Contact</div>
-        <div id="contactArea">
-            <div class="form" id="contactForm">
-                <input class="formInputs" type="First" name="firstName" placeholder="First">
-                <input class="formInputs" type="text" name="lastName" placeholder="Last">
-                <input class="formInputs" type="text" name="email" placeholder="Email">
-                <textarea class="formMessage" type="text" name="email" placeholder="Message"></textarea>
-                <div class="button">
-                    <div class="container">
-                        <div class="tick">
+                <div id="contactHeader">Contact</div>
+                <div id="contactArea">
+                    <div>
+                        <form method="POST" action="https://formspree.io/jj.mateer@live.com/" id="contactForm"
+                            class="form">
+                            <!-- <input class="formInputs" type="name" name="name" placeholder="Name" id="name"> -->
+                            <input class="formInputs" type="email" name="email" placeholder="Email" id="email">
+                            <textarea rows="5" class="formInputs" id="message" type="message" name="message"
+                                placeholder="Message"></textarea>
+                            <button id="submit" type="submit" name="submit" value="Send"></button>
+                        </form>
+                        <div id="contactLinks">
+                            <btn id="github">
+                                <img src="assets/style/images/GitHub-Mark-Light-120px-plus.png">
+                            </btn>
+                            <btn id="linkedin">
+                                <img src="assets/style/images/LI-In-Bug.png" width="160" height="120">
+                            </btn>
                         </div>
                     </div>
                 </div>
-                <input class="formInputs" type="submit" name="formSubmit">
-            </div>
-            <div id="contactLinks">
-                <btn id="github">
-                    <img src="assets/style/images/GitHub-Mark-Light-120px-plus.png">
-                </btn>
-                <btn id="linkedin">
-                    <img src="assets/style/images/LI-In-Bug.png" width="160" height="120">
-                </btn>
-            </div>
-        </div>
 
-    </div>
+            </div>
 
-    <script src="assets/javascript/code.js"></script>
+            <script src="assets/javascript/code.js"></script>
 </body>
 
 </html>

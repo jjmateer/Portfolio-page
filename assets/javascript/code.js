@@ -29,6 +29,38 @@ $(document).ready(function () {
 
     });
 });
+$("#submit").on("click", function () {
+    event.preventDefault();
+    console.log('clicked');
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var message = $("#message").val();
+    console.log(name);
+    console.log(email);
+    console.log(message);
+    if ($('#name').val() < 1 || $('#email').val() < 1 || $("#message").val() < 1) {
+        console.log('required fields empty')
+        $("#name").attr("placeholder", "*Required");
+        $("#email").attr("placeholder", "*Required");
+        $("#message").attr("placeholder", "*Required");
+
+    } else {
+        event.preventDefault();
+        console.log('valid!')
+        $('.formInputs').val('');
+        $("#name").attr("placeholder", "Name");
+        $("#email").attr("placeholder", "Email");
+        $("#message").attr("placeholder", "Message");
+        $.ajax({
+            url: "https://formspree.io/jj.mateer@live.com",
+            method:"POST",
+            data: $(this).serialize(),
+            dataType: 'json'
+        });
+        event.preventDefault();
+    }
+
+});
 $("#scroll1").on('click', function () {
     $('body').animate({
         scrollTop: $("#banner").offset().top
@@ -60,7 +92,8 @@ $("#mobile1").on('click', function () {
         scrollTop: $("#aboutme").offset().top
     },
         'slow');
-    $("#aboutme").append("<div id='homeBtnMobile'></div>")
+    $("#aboutme").prepend("<div id='homeBtnMobile'></div>")
+    $("#homeBtnMobile").text("Home");
     $("#homeBtnMobile").on('click', function () {
         $("#homeBtnMobile").remove();
         $('body').animate({
@@ -76,7 +109,8 @@ $("#mobile2").on('click', function () {
         scrollTop: $("#portfolio").offset().top
     },
         'slow');
-    $("#portfolio").append("<div id='homeBtnMobile'></div>")
+    $("#portfolio").prepend("<div id='homeBtnMobile'></div>")
+    $("#homeBtnMobile").text("Home");
     $("#homeBtnMobile").on('click', function () {
         $("#homeBtnMobile").remove();
         $('body').animate({
@@ -92,7 +126,8 @@ $("#mobile3").on('click', function () {
         scrollTop: $("#contact").offset().top
     },
         'slow');
-    $("#contact").append("<div id='homeBtnMobile'></div>")
+    $("#contact").prepend("<div id='homeBtnMobile'></div>")
+    $("#homeBtnMobile").text("Home");
     $("#homeBtnMobile").on('click', function () {
         $("#homeBtnMobile").remove();
         $('body').animate({

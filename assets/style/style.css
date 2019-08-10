@@ -13,11 +13,15 @@
     margin-top:5%;
 }
 #portfolioGrid{
-    height:60%;
+    height:100% !important;
     width:100%;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
+}
+#portfolioStack{
+    display:none;
+    height:100% !important;
 }
 #banner {
     background-color:black;
@@ -100,7 +104,12 @@
         height:7.5%;
         margin:5px;
     }
-    .formMessage{
+    #submit{
+        width:100%;
+        height:7.5%;
+        margin:5px;
+    }
+    #message{
         width:100%;
         height:20%;
         margin:5px;
@@ -128,42 +137,6 @@
         margin-right:0px;
     }
 
-    @media (min-width: 1281px) {
-        #mobileMenu{
-            display:none;
-        }
-        #banner{
-        height:100%;
-        width:100%;
-        font-size:150px;
-        color:black
-        }
-        #aboutme{        
-            height:100%;
-            margin-top:5%;
-        }
-        #aboutHeader{
-            font-size:150px;
-        }
-        #aboutText{
-            font-size:35px;
-        }
-        #portfolioHeader{
-            font-size:150px
-        }
-        #portfolio{        
-            height:100%;
-            margin-top:5%;
-            font-size:50px;
-        }
-        #contact{        
-            height:100%;
-            margin-top:5%;
-        }
-        #contactHeader{
-            font-size: 150px
-        }
-        }
     @media (min-width: 1025px) and (max-width: 1280px) {
         #mobileMenu{
             display:none;
@@ -186,190 +159,16 @@
         #portfolioHeader{
             font-size:60px
         }
+        #portofioStack{
+            display:none;
+        }
         #contact{
             height:100%;
 
         }
+        
         #contactHeader{
             font-size: 60px
         }
         }
-    @media (min-width: 481px) and (max-width: 1024px) {
-        .menu{
-            transform:translateY(50%);
-            position:fixed;
-            width:600px;
-            height:200px;
-            z-index:5;
-            opacity: 0;
-            top:50%;
-    
-        }
-        .menu a{
-            color:white;
-            display:block;
-            height:25%;
-            width:400px;
-            text-align:right;
-            font-family: 'Frank Ruhl Libre', serif;
-            font-size:25px;
-            transition:0.6s all;
-            text-decoration: none;
-            margin-left:-300px;
-        }
-        .menu a:hover{
-            margin-left:-290px;
-        }
-        #portfolioGrid{
-            display:none;
-        }
-        #mobileMenu{
-            display:none;
-        }
-        #banner{
-        height:100%;
-        width:auto;
-        font-size:75px;
-        
-        }
-        #nameTag{
-            color:purple;
-        }
-        #aboutme{
-            height:100%;
-
-        }
-        #aboutHeader{
-            font-size:50px;
-        }
-        #aboutText{
-            font-size:30px;
-        }
-        #portfolio{
-            height:100%;
-
-        }
-        #portfolioHeader{
-            font-size:50px;
-        }
-        #contact{
-            height:100%;
-
-        }
-        #contactHeader{
-            font-size: 50px
-        }
-        #contactLinks{
-            width:80%;
-            height:20%;
-            margin-left:auto;
-            margin-right:auto;
-        }
-
-
-    
-    }
-    @media (min-width: 220px) and (max-width: 480px) {
-        #portfolioGrid{
-            display:none;
-        }
-        .menu{
-            display:none;
-        }
-        #mobileMenu{
-            opacity:0;
-            display: block;
-            width:100%;
-            height:75%;
-
-            font-size:40px;
-
-        }
-        #mobile1{
-            display:block;
-            width:100%;
-            height:25%;
-            background-color:orange;
-        }
-        #mobile2{
-            display:block;
-            width:100%;
-            height:25%;
-            background-color:lightblue;
-        }
-        #mobile3{
-            display:block;
-            width:100%;
-            height:25%;
-            background-color:orangered;
-        }
-        #homeBtnMobile{
-            background-color:purple;
-            color:white;
-            height:50px;
-            width:100px;
-        }
-        #banner{
-            height:25%;
-            font-size:50px;
-        } 
-        #nameTag{
-            font-size:60px;
-        }
-        #banner{
-            height:40%;
-            width:100%;
-        }
-        #aboutme{
-            padding-top:20%;
-            height:100%;
-            width:100%;
-        }
-        #portfolio{
-            padding-top:20%;
-            height:100%;
-            width:100%;
-        }
-        #contact{
-            padding-top:20%;
-            height:100%;
-            width:100%;
-        }
-        #contactForm{
-            width:90%;
-            height:60%;
-            margin-left:5%;
-            margin-right:5%;
-        }
-        .formInputs{
-            width:90%;
-            height:10%;
-            margin:5px;
-        }
-        .formMessage{
-            width:90%;
-            height:20%;
-            margin:5px;
-        }
-        #contactLinks{
-            width:100%;
-            height:20%;
-            display:flex;
-        }
-        #github{
-            width:40%;
-            height:100%;
-            margin:0px;
-        }
-        #linkedin{
-            width:40%;
-            height:100%;
-            margin-left:60%;
-        }
-        html{
-            background-color: black;
-            color:white;
-            overflow:hidden;
-        }
-
-    }
+   
