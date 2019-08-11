@@ -9,6 +9,7 @@ function showContent() {
     $("#contact").show();
 
 }
+document.ontouchmove = function (e) {e.preventDefault();}
 $(document).ready(function () {
     $("#banner").prepend("<div id='welcomeDisplay'>Welcome</div>")
     $("#banner").append("<btn id='welcomeBtn'>Enter site</btn>")
