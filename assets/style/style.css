@@ -1,3 +1,4 @@
+
 #welcomeBtn{
     opacity:0;
     background-color: white;
@@ -13,21 +14,37 @@
     margin-top:5%;
 }
 #portfolioGrid{
-    height:100% !important;
-    width:100%;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    height:300px;
+    width:1200px;
+    display:flex;
+    overflow-x:scroll;
+    margin:auto;
 }
 #portfolioStack{
     display:none;
     height:100% !important;
 }
+.pictures{
+height:250px;
+width:400px;
+}
+.portfolioItems{
+    height:250px;
+    width:400px;
+    margin:10px;
+    background-color:lightgray;
+}
 #banner {
     background-color:black;
     transition: background-color 2s;
     height:100%;
-    width:100%;
+    width:100% !important;
+    font-size:125px;
+    text-align:center;
+    position:relative;
+    display:block;
+    font-family: 'Frank Ruhl Libre', serif;
+    z-index:1;
     }
     html{
         background-color: black;
@@ -59,18 +76,7 @@
     .menu a:hover{
         margin-left:-10px;
     }
-    .pictures{
-        height:200px;
-        width:400px;
-    }
-    #banner{
-        text-align:center;
-        position:relative;
-        width:100%;
-        display:block;
-        font-family: 'Frank Ruhl Libre', serif;
-        z-index:1;
-    }
+
     #aboutme{
         text-align:justify;
         font-family: 'Frank Ruhl Libre', serif;
@@ -82,6 +88,7 @@
     #portfolioHeader{
         color:lightblue;
         text-align:center;
+        margin-bottom:200px;
     }
     #contactHeader{
         color:orangered;
@@ -89,6 +96,8 @@
     }
     #portfolio{
         text-align:center;
+        width:100%;
+        height:100%;
     }
     #contact{
         text-align:center;
@@ -135,15 +144,12 @@
         position:absolute;
         margin-right:0px;
     }
-
+    #fs-frm-inputs{
+        border:none;
+    }
     @media (min-width: 1025px) and (max-width: 1280px) {
         #mobileMenu{
             display:none;
-        }
-        #banner{
-        height:100%;
-        font-size:125px;
-
         }
         #aboutme{
             height:100%;

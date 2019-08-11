@@ -20,7 +20,7 @@ $(document).ready(function () {
         $("#welcomeDisplay").animate({ "opacity": "0" }, 1000);
         $("#welcomeBtn").animate({ "opacity": "0" }, 1000);
         $("#nameTag").delay(500).animate({ "opacity": "1" }, 1000);
-        $(".menu").delay(500).animate({ "opacity": "0.75" }, 1000);
+        $(".menu").delay(500).animate({ "opacity": "0.50" }, 1000);
         $("#mobileMenu").delay(500).animate({ "opacity": "1" }, 1000);
         showContent();
         $('#banner').css({

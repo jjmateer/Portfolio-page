@@ -48,40 +48,48 @@
     </div>
 
     <div id="portfolio">
-        <div>
             <div id="portfolioHeader">Portfolio</div>
-            <div id="portfolioGrid" class="grid-container">
-                <div class="grid-item"> <button onclick="location.href='https://jjmateer.github.io/Giftastic/'"
+            <div id="portfolioGrid">
+                <div class="portfolioItems"> <button onclick="location.href='https://jjmateer.github.io/Giftastic/'"
                         type="button" class="btn btn-primary "><img class="pictures"
                             src="assets/style/images/giftasticImage.png"></button>
                 </div>
-                <div class="grid-item"> <button onclick="location.href='https://jjmateer.github.io/Phsychic-game/'"
+                <div class="portfolioItems"> <button onclick="location.href='https://jjmateer.github.io/Phsychic-game/'"
                         type="button" class="btn btn-primary "><img class="pictures"
                             src="assets/style/images/PhsychicImage.png"></button>
                 </div>
-                <div class="grid-item"> <button onclick="location.href='https://jjmateer.github.io/Trivia-game/'"
+                <div class="portfolioItems"> <button onclick="location.href='https://jjmateer.github.io/Trivia-game/'"
                         type="button" class="btn btn-primary "><img class="pictures"
                             src="assets/style/images/fastfoodImage.png"></button>
                 </div>
-                <div class="grid-item"> <button onclick="location.href='https://jjmateer.github.io/TriviaGameAdvanced/'"
-                        type="button" class="btn btn-primary "><img class="pictures"
+                <div class="portfolioItems"> <button
+                        onclick="location.href='https://jjmateer.github.io/TriviaGameAdvanced/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
                             src="assets/style/images/triviaImage.png"></button>
                 </div>
-                <div class="grid-item"> <button
+                <div class="portfolioItems"> <button
                         onclick="location.href='https://jjmateer.github.io/Crystal-Collector-Game/'" type="button"
                         class="btn btn-primary "><img class="pictures"
                             src="assets/style/images/crystalImage.png"></button>
                 </div>
-                <div class="grid-item"> <button onclick="location.href='https://jjmateer.github.io/Train-Scheduler/'"
-                        type="button" class="btn btn-primary "><img class="pictures"
+                <div class="portfolioItems"> <button
+                        onclick="location.href='https://jjmateer.github.io/Train-Scheduler/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
                             src="assets/style/images/trainImage.png"></button>
                 </div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
-                <div class="grid-item"></div>
+                <div class="portfolioItems"> <button
+                        onclick="location.href='https://jjmateer.github.io/Train-Scheduler/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/trainImage.png"></button>
+                </div>
+                <div class="portfolioItems"> <button
+                        onclick="location.href='https://jjmateer.github.io/Train-Scheduler/'" type="button"
+                        class="btn btn-primary "><img class="pictures"
+                            src="assets/style/images/trainImage.png"></button>
+                </div>
             </div>
+
+
             <div id="portfolioStack">
                 <div id="stackItem"> <button onclick="location.href='https://jjmateer.github.io/Giftastic/'"
                         type="button" class="btn btn-primary "><img class="pictures"
@@ -107,40 +115,38 @@
                 </div>
 
             </div>
+        </div>
+        <div id="contact">
 
-            <div id="contact">
+            <div id="contactHeader">Contact</div>
+            <div id="contactArea">
+                <form id="contactForm" name="simple-contact-form" accept-charset="utf-8"
+                    action="https://formspree.io/jj.mateer@live.com" method="post">
+                    <fieldset id="fs-frm-inputs">
+                        <input class="formInputs" type="text" name="name" id="name" placeholder="Name" required="">
 
-                <div id="contactHeader">Contact</div>
-                <div id="contactArea">
-                    <form id="contactForm" name="simple-contact-form" accept-charset="utf-8"
-                        action="https://formspree.io/jj.mateer@live.com" method="post">
-                        <fieldset id="fs-frm-inputs">
-                            <input class="formInputs" type="text" name="name" id="name" placeholder="Name"
-                                required="">
+                        <input class="formInputs" type="email" name="_replyto" id="email" placeholder="name@email.com"
+                            required="">
 
-                            <input class="formInputs" type="email" name="_replyto" id="email"
-                                placeholder="name@email.com" required="">
-
-                            <textarea class="formInputs" rows="5" name="message" id="message"
-                                placeholder="Send me a message!"
-                                required=""></textarea>
-                            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                        </fieldset>
-                        <input type="submit" value="Submit">
-                    </form>
-                    <div id="contactLinks">
-                            <btn id="github">
-                                <img src="assets/style/images/GitHub-Mark-Light-120px-plus.png">
-                            </btn>
-                            <btn id="linkedin">
-                                <img src="assets/style/images/LI-In-Bug.png" width="160" height="120">
-                            </btn>
-                        </div>
+                        <textarea class="formInputs" rows="5" name="message" id="message"
+                            placeholder="Send me a message!" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+                <div id="contactLinks">
+                    <btn id="github">
+                        <img src="assets/style/images/GitHub-Mark-Light-120px-plus.png">
+                    </btn>
+                    <btn id="linkedin">
+                        <img src="assets/style/images/LI-In-Bug.png" width="160" height="120">
+                    </btn>
                 </div>
-
             </div>
 
-            <script src="assets/javascript/code.js"></script>
+        </div>
+
+        <script src="assets/javascript/code.js"></script>
 </body>
 
 </html>
