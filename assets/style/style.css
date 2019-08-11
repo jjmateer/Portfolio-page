@@ -105,7 +105,12 @@ width:400px;
     #contactForm{
         width:100%;
         height:50%;
-
+    }
+    #contactSubmit{
+        width:90%;
+        height:7.5%;
+        margin:5px;
+        font-size:30px;
     }
     .formInputs{
         width:100%;
